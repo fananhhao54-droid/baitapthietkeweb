@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <style>
+      body {
+        width: 800px;
+        margin: auto;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu khảo sát ITviec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <h1>Biểu mẫu khảo sát ITviec</h1>
+    <form>
+        <table style="width: 100%; border-collapse: separate;">
+            <tr>
+                <th align="left"><label>Họ tên</label></th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Nhập tên của bạn"></td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Email</label></th>
+            </tr>
+            <tr>
+                <td><input type="email" placeholder="Nhập email của bạn"></td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Tuổi</label></th>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Nhập tuổi"></td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Hiện tại bạn đang là?</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option>Học sinh/Sinh viên</option>
+                        <option>Người đi làm</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Bạn sẽ giới thiệu ITviec với bạn bè chứ?</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="ref"> Có <br>
+                    <input type="radio" name="ref"> Không <br>
+                    <input type="radio" name="ref"> Có thể
+                </td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Ngôn ngữ lập trình và Framework?</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox"> C <br>
+                    <input type="checkbox"> C++ <br>
+                    <input type="checkbox"> C#
+                </td>
+            </tr>
+
+            <tr>
+                <th align="left"><label>Bạn có câu hỏi gì cho ITviec không?</label></th>
+            </tr>
+            <tr>
+                <td><textarea placeholder="Enter your comment here"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

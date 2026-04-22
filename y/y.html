@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký mua hoa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #333;
+      }
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+
+      /* Header */
+      .header-logo {
+        text-align: right;
+        padding-bottom: 20px;
+        color: red;
+      }
+      .header-logo h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .header-logo p {
+        margin: 0;
+        font-size: 11px;
+        color: #555;
+        font-weight: bold;
+      }
+
+      /* Layout */
+      .layout-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      .layout-table td {
+        vertical-align: top;
+      }
+
+      .col-left {
+        width: 22%;
+        padding-right: 10px;
+      }
+      .col-center {
+        width: 56%;
+        border-left: 1px solid #ccc;
+        padding: 0 15px;
+      }
+      .col-right {
+        width: 22%;
+        text-align: center;
+      }
+
+      /* Menu */
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0 10px;
+        color: red;
+        line-height: 2.5;
+        font-weight: bold;
+      }
+      .menu li::before {
+        content: "● ";
+        font-size: 14px;
+        margin-right: 5px;
+      }
+
+      /* Form Content */
+      .black-banner {
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        text-align: right;
+        font-weight: bold;
+      }
+      .form-title {
+        text-align: center;
+        font-size: 22px;
+        margin: 20px 0 10px 0;
+      }
+      .note-text {
+        color: red;
+        font-style: italic;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .form-table {
+        width: 100%;
+      }
+      .form-table td {
+        padding: 6px;
+      }
+      .label-cell {
+        text-align: right;
+        width: 30%;
+      }
+      .input-cell input[type="text"],
+      .input-cell input[type="email"],
+      .input-cell textarea {
+        width: 85%;
+        padding: 3px;
+        border: 1px solid #aaa;
+      }
+      .required {
+        color: black;
+        font-weight: bold;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      /* Image Styling */
+      .side-img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-logo">
+        <h1>HOA CẢNH</h1>
+        <p>HỘI HOA LAN - CÂY CẢNH THÀNH PHỐ HỒ CHÍ MINH</p>
+      </div>
+
+      <table class="layout-table">
+        <tr>
+          <td class="col-left">
+            <ul class="menu">
+              <li>Trang chủ</li>
+              <li>Tin Tức</li>
+              <li>Hộp thư</li>
+              <li>Góc thư giãn</li>
+              <li>Hoa - Cây cảnh</li>
+            </ul>
+            <div style="text-align: center">
+              <img
+                src="Screenshot 2026-04-22 080811.png"
+                alt="Hoa hồng"
+                class="side-img"
+              />
+            </div>
+          </td>
+
+          <td class="col-center">
+            <div class="black-banner">Welcome to Hoa cảnh tui nè</div>
+            <h2 class="form-title">ĐĂNG KÝ MUA HOA</h2>
+            <p class="note-text">
+              Quý độc giả hãy điền đầy đủ các thông tin theo yêu cầu để nhận
+              được sản phẩm hoa, cây cảnh ưa thích nhất
+            </p>
+
+            <form>
+              <table class="form-table">
+                <tr>
+                  <td class="label-cell">Họ và tên:</td>
+                  <td class="input-cell">
+                    <input type="text" name="hoten" />
+                    <span class="required">(*)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Địa chỉ:</td>
+                  <td class="input-cell">
+                    <input type="text" name="diachi" />
+                    <span class="required">(*)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Điện thoại:</td>
+                  <td class="input-cell">
+                    <input type="text" name="tel" style="width: 50%" />
+                    <span class="required">(*)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Email:</td>
+                  <td class="input-cell">
+                    <input type="email" name="email" />
+                    <span class="required">(*)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Loại hoa:</td>
+                  <td class="input-cell">
+                    <select name="loai">
+                      <option>Hoa Hồng</option>
+                      <option>Hoa Lan</option>
+                    </select>
+                    &nbsp; Màu: &nbsp;
+                    <select name="mau">
+                      <option>Đỏ</option>
+                      <option>Trắng</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Số lượng:</td>
+                  <td class="input-cell">
+                    <input type="text" name="sl" style="width: 20%" />
+                    <span class="required">(*)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Đơn vị tính:</td>
+                  <td class="input-cell">
+                    <input type="radio" name="dvt" /> Nhánh
+                    <input type="radio" name="dvt" /> Bó
+                    <input type="radio" name="dvt" /> Chậu
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Thanh toán:</td>
+                  <td class="input-cell">
+                    <input type="radio" name="pay" /> Tiền mặt
+                    <input type="radio" name="pay" /> Chuyển khoản
+                    <input type="radio" name="pay" /> Master card
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-cell">Yêu cầu:</td>
+                  <td class="input-cell">
+                    <textarea rows="4" name="request"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <button type="submit">Đăng ký</button>
+                    <button type="reset">Nhập lại</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+
+          <td class="col-right">
+            <div style="padding-top: 50px">
+              <img
+                src="Screenshot 2026-04-22 080817.png"
+                alt="Bình hoa"
+                class="side-img"
+              />
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="footer">
+        Bản quyền thuộc công ty Hoa cảnh Tui nè, số nhà 36, Thành phố Hoa Thánh
+      </div>
+    </div>
+  </body>
+</html>
